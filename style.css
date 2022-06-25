@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+}
+
+.showcase{
+    background: url("https://i.ibb.co/vXqDmnh/background.jpg");
+    height: 100vh;
+}
+
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr;
+    column-gap: -30px;
+}
+
+.showcase-top img{
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 180px;
+}
+
+.showcase-top select, .showcase-top button{
+    width: 65%;
+    height: 35px;
+    margin: 20px 0;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: medium;
+}
+
+.showcase::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 10px 100px 250px #000000, inset -10px -100px 250px #000000;
+}
+
+.showcase-top button{
+    background-color: #e30813;
+    border: transparent;
+}
+
+option{
+    color: gray;
+}
+
+.showcase-content{
+    position: relative;
+    z-index: 2;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    top:23vh;
+}
+
+.showcase-content h1{
+    font-weight: 650;
+	font-size: 4rem;
+}
+
+.showcase-content h3{
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-top: 17px;
+}
+
+.showcase-content p{
+    font-size: 1.2rem;
+    margin-top: 24px;
+
+}
+
+.sign-in{
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+}
+
+#email{
+    width: 520px;
+    height: 65px;
+    font-size: medium;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#submit{
+    width: 200px;
+    height: 65px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #e30813;
+    border: 1px solid black;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+hr{
+    height: 10px;
+    background-color: rgb(55, 53, 53);
+    border: none;
+}
+
+.section-1, .section-3{
+    height: 55%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    padding: 0;
+}
+
+.section-1 img, .section-3 img{
+    grid-row: 1/2;
+    grid-column: 2/2;
+    height: 80%;
+}
+
+.section-1 video{
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    z-index: -1;
+    width: 70%;
+    left: 10%;
+}
+
+.section-3 video{
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 2/2;
+    z-index: -1;
+    width: 53%;
+    bottom: 15%;
+    left: 17%;
+}
+
+.section-2, .section-4{
+    height: 55%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 img, .section-4 img{
+    position: relative;
+    grid-row: 1/1;
+    grid-column: 1/1;
+    height: 80%;
+    left: 10%;
+}
+
+.text{
+    width: 85%;
+    color: white;
+}
+
+.text h1{
+    font-size: 3rem;
+}
+
+.text h3{
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside h1{
+    color: white;
+    font-size: 3rem;
+    margin: 40px 0;
+}
+
+.faq{
+    width: 55%;
+    background-color: rgb(55, 53, 53);
+    color: white; 
+}
+
+section hr{
+    height: 2px;
+}
+
+.faq hr{
+    background-color: #000000;
+}
+
+.ques{
+    font-size: 1.7rem;
+    font-weight: 200;
+    padding: 20px 30px;
+}
+
+span{
+    float: right;
+    font-size: 40px;
+}
+
+.ans{
+    font-size: 1.7rem;
+    font-weight: 200;
+    padding: 30px 20px;
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
+
+aside p{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 70px;
+}
